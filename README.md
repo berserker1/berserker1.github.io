@@ -10,7 +10,7 @@ This is a blog related to certain things which fall under these categories.
   - Some experience I gained, the process ( in short ) I had to go through to learn it and what the reader should know from all of this to help him save its time and not go through the same journey ( possibly have a better one ).
 ## Rule which I follow
 
-(Post is on the blog) if and only if ((At least one of the above category the post falls under) and (Post does not have a category mentioned above))
+**(Post is on the blog)**  *if and only if*  **( (At least one of the above category the post falls under)** *and* **(Post does not have a category mentioned above) )**
 ## Theme
 
 The theme I took from [this](https://github.com/victorvoid/space-jekyll-template) awsome repo.
