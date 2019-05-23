@@ -19,7 +19,7 @@
 <aside id="sidebar">
   <div id="topmenu">
     {% assign filename = page.url | replace_first: '/', '' | replace: '/', '-'  | replace: '.html', '.md' %}
-    <ul>
+    <!-- <ul>
       <li><span>1</span></li>
       <li><span> {{page.url}}</span></li>
       <li><span>⌘ blogspace λ </span></li>
@@ -30,7 +30,7 @@
       <li><span>utf-8</span></li>
       <li><span>web</span></li>
       <li><span>.html</span></li>
-    </ul>
+    </ul> -->
   </div>
 
   <nav id="navigation" role="navigation">
@@ -44,7 +44,9 @@
       {% else %}
         <li>
           <span class="counter-menu">{{counter}}</span>
-          <svg viewBox="0 0 50 50" class="icon-arrow-menu"><use xlink:href="#icon-right-arrow"></use></svg>
+          <svg viewBox="0 0 50 50" class="icon-arrow-menu">
+            <!-- <use xlink:href="#icon-right-arrow"></use> -->
+          </svg>
           <a href="{{ site.url }}{{ link.url }}"> {{ link.title }}</a>
         </li>
       {% endif %}
