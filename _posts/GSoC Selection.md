@@ -1,10 +1,9 @@
 ---
 layout: post
 title: "GSoC, The Journey Begins"
-image: 'https://1.bp.blogspot.com/-MmSM4OAqzBY/XG7t3oa3vAI/AAAAAAAAB2k/ E03hpYapRPQIo6iZv059c66m7pLF-v37ACLcBGAs/s320/GSoC%2B-%2BVertical%2BNarrow%2B-%2BGray%2BText%2B-%2BWhite%2BBG.png'
+image: '/assets/GSoC.png'
 date: 29/5/2019
 tags:
-
 - GSoC
 - Introductory Blog
 description: 'Introductory blog regarding my selection in GSoC program'
