@@ -8,7 +8,6 @@ tags:
 - Introductory Blog
 description: 'Introductory blog regarding my selection in GSoC program'
 categories:
-
 - GSoC
 ---
 
