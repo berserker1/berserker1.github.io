@@ -157,6 +157,14 @@ argparse@^1.0.7:
   dependencies:
     sprintf-js "~1.0.2"
 
+"argparse@~ 0.1.11":
+  version "0.1.16"
+  resolved "https://registry.yarnpkg.com/argparse/-/argparse-0.1.16.tgz#cfd01e0fbba3d6caed049fbd758d40f65196f57c"
+  integrity sha1-z9AeD7uj1srtBJ+9dY1A9lGW9Xw=
+  dependencies:
+    underscore "~1.7.0"
+    underscore.string "~2.4.0"
+
 arr-diff@^1.0.1:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/arr-diff/-/arr-diff-1.1.0.tgz#687c32758163588fef7de7b36fabe495eb1a399a"
@@ -294,6 +302,11 @@ async-settle@^1.0.0:
   dependencies:
     async-done "^1.2.2"
 
+async@0.2.9:
+  version "0.2.9"
+  resolved "https://registry.yarnpkg.com/async/-/async-0.2.9.tgz#df63060fbf3d33286a76aaf6d55a2986d9ff8619"
+  integrity sha1-32MGD789Myhqdqr21Vophtn/hhk=
+
 async@1.5.2, async@~1.5.2:
   version "1.5.2"
   resolved "https://registry.yarnpkg.com/async/-/async-1.5.2.tgz#ec6a61ae56480c0c3cb241c95618e20892f9672a"
@@ -343,6 +356,11 @@ bach@^1.0.0:
 backo2@1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/backo2/-/backo2-1.0.2.tgz#31ab1ac8b129363463e35b3ebb69f4dfcfba7947"
+
+bal-util@~1.15.4:
+  version "1.15.4"
+  resolved "https://registry.yarnpkg.com/bal-util/-/bal-util-1.15.4.tgz#c2b4f24c4b04434f18d5ca644a920564aa613eac"
+  integrity sha1-wrTyTEsEQ08Y1cpkSpIFZKphPqw=
 
 balanced-match@^0.4.1:
   version "0.4.2"
@@ -802,9 +820,21 @@ color-support@^1.1.3:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/color-support/-/color-support-1.1.3.tgz#93834379a1cc9a0c61f82f52f0d04322251bd5a2"
 
+colors@0.6.2:
+  version "0.6.2"
+  resolved "https://registry.yarnpkg.com/colors/-/colors-0.6.2.tgz#2423fe6678ac0c5dae8852e5d0e5be08c997abcc"
+  integrity sha1-JCP+ZnisDF2uiFLl0OW+CMmXq8w=
+
 colors@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/colors/-/colors-1.1.2.tgz#168a4701756b6a7f51a12ce0c97bfa28c084ed63"
+
+commander@1.3.2:
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-1.3.2.tgz#8a8f30ec670a6fdd64af52f1914b907d79ead5b5"
+  integrity sha1-io8w7GcKb91kr1LxkUuQfXnq1bU=
+  dependencies:
+    keypress "0.1.x"
 
 commander@^2.2.0:
   version "2.20.0"
@@ -1395,6 +1425,11 @@ esprima@^4.0.0:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/esprima/-/esprima-4.0.1.tgz#13b04cdb3e6c5d19df91ab6987a8695619b0aa71"
 
+"esprima@~ 1.0.2":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/esprima/-/esprima-1.0.4.tgz#9f557e08fc3b4d26ece9dd34f8fbf476b62585ad"
+  integrity sha1-n1V+CPw7TSbs6d00+Pv0drYlha0=
+
 etag@1.8.1, etag@^1.8.1, etag@~1.8.1:
   version "1.8.1"
   resolved "https://registry.yarnpkg.com/etag/-/etag-1.8.1.tgz#41ae2eeb65efa62268aebfea83ac7d79299b0887"
@@ -1703,6 +1738,11 @@ fragment-cache@^0.2.1:
   resolved "https://registry.yarnpkg.com/fragment-cache/-/fragment-cache-0.2.1.tgz#4290fad27f13e89be7f33799c6bc5a0abfff0d19"
   dependencies:
     map-cache "^0.2.2"
+
+fresh@0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/fresh/-/fresh-0.2.0.tgz#bfd9402cf3df12c4a4c310c79f99a3dde13d34a7"
+  integrity sha1-v9lALPPfEsSkwxDHn5mj3eE9NKc=
 
 fresh@0.5.2, fresh@^0.5.2:
   version "0.5.2"
@@ -2154,6 +2194,11 @@ gulplog@^1.0.0:
   resolved "https://registry.yarnpkg.com/gulplog/-/gulplog-1.0.0.tgz#e28c4d45d05ecbbed818363ce8f9c5926229ffe5"
   dependencies:
     glogg "^1.0.0"
+
+han@0.0.7:
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/han/-/han-0.0.7.tgz#92767221b13bfb115bf9d261af23eacef1d792b7"
+  integrity sha1-knZyIbE7+xFb+dJhryPqzvHXkrc=
 
 has-ansi@^2.0.0:
   version "2.0.0"
@@ -2685,6 +2730,26 @@ jeet@^6.1.4:
   version "6.1.5"
   resolved "https://registry.yarnpkg.com/jeet/-/jeet-6.1.5.tgz#47646fe3e1d084c8d8b77482d79fe85d5fe3c910"
 
+jekyll-cli@^0.3.9:
+  version "0.3.9"
+  resolved "https://registry.yarnpkg.com/jekyll-cli/-/jekyll-cli-0.3.9.tgz#f57d85933aecc695513e09c2778bac683665e12a"
+  integrity sha1-9X2FkzrsxpVRPgnCd4usaDZl4So=
+  dependencies:
+    async "0.2.9"
+    colors "0.6.2"
+    commander "1.3.2"
+    han "0.0.7"
+    js-yaml "2.1.0"
+    mkdirp "0.3.5"
+    send "0.1.4"
+    strftime "0.6.2"
+    watchr "2.3.3"
+
+jekyll@^3.0.0-beta1:
+  version "3.0.0-beta1"
+  resolved "https://registry.yarnpkg.com/jekyll/-/jekyll-3.0.0-beta1.tgz#32749f03004cff217bf29988f6e4420606479ff9"
+  integrity sha1-MnSfAwBM/yF78pmI9uRCBgZHn/k=
+
 jpegtran-bin@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/jpegtran-bin/-/jpegtran-bin-4.0.0.tgz#d00aed809fba7aa6f30817e59eee4ddf198f8f10"
@@ -2696,6 +2761,14 @@ jpegtran-bin@^4.0.0:
 js-base64@~2.1.5:
   version "2.1.9"
   resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-2.1.9.tgz#f0e80ae039a4bd654b5f281fc93f04a914a7fcce"
+
+js-yaml@2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-2.1.0.tgz#a55a6e4706b01d06326259a6f4bfc42e6ae38b1f"
+  integrity sha1-pVpuRwawHQYyYlmm9L/ELmrjix8=
+  dependencies:
+    argparse "~ 0.1.11"
+    esprima "~ 1.0.2"
 
 js-yaml@^3.13.1, js-yaml@~3.13.0:
   version "3.13.1"
@@ -2727,6 +2800,11 @@ jsonify@~0.0.0:
 just-debounce@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/just-debounce/-/just-debounce-1.0.0.tgz#87fccfaeffc0b68cd19d55f6722943f929ea35ea"
+
+keypress@0.1.x:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/keypress/-/keypress-0.1.0.tgz#4a3188d4291b66b4f65edb99f806aa9ae293592a"
+  integrity sha1-SjGI1CkbZrT2XtuZ+AaqmuKTWSo=
 
 keyv@3.0.0:
   version "3.0.0"
@@ -3134,6 +3212,11 @@ mime@1.4.1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/mime/-/mime-1.4.1.tgz#121f9ebc49e3766f311a76e1fa1c8003c4b03aa6"
 
+mime@~1.2.9:
+  version "1.2.11"
+  resolved "https://registry.yarnpkg.com/mime/-/mime-1.2.11.tgz#58203eed86e3a5ef17aed2b7d9ebd47f0a60dd10"
+  integrity sha1-WCA+7Ybjpe8XrtK32evUfwpg3RA=
+
 mimic-response@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/mimic-response/-/mimic-response-1.0.1.tgz#4923538878eef42063cb8a3e3b0798781487ab1b"
@@ -3181,6 +3264,11 @@ mixin-deep@^1.2.0:
   dependencies:
     for-in "^1.0.2"
     is-extendable "^1.0.1"
+
+mkdirp@0.3.5:
+  version "0.3.5"
+  resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-0.3.5.tgz#de3e5f8961c88c787ee1368df849ac4413eca8d7"
+  integrity sha1-3j5fiWHIjHh+4TaN+EmsRBPsqNc=
 
 mkdirp@0.5.x, mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.1:
   version "0.5.1"
@@ -3804,6 +3892,11 @@ query-string@^5.0.1:
     object-assign "^4.1.0"
     strict-uri-encode "^1.0.0"
 
+range-parser@0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/range-parser/-/range-parser-0.0.4.tgz#c0427ffef51c10acba0782a46c9602e744ff620b"
+  integrity sha1-wEJ//vUcEKy6B4KkbJYC50T/Ygs=
+
 range-parser@~1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/range-parser/-/range-parser-1.2.0.tgz#f49be6b487894ddc40dcc94a322f611092e00d5e"
@@ -4107,6 +4200,16 @@ semver@^4.0.3:
 semver@^5.5.0, semver@^5.6.0:
   version "5.7.0"
   resolved "https://registry.yarnpkg.com/semver/-/semver-5.7.0.tgz#790a7cf6fea5459bac96110b29b60412dc8ff96b"
+
+send@0.1.4:
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/send/-/send-0.1.4.tgz#be70d8d1be01de61821af13780b50345a4f71abd"
+  integrity sha1-vnDY0b4B3mGCGvE3gLUDRaT3Gr0=
+  dependencies:
+    debug "*"
+    fresh "0.2.0"
+    mime "~1.2.9"
+    range-parser "0.0.4"
 
 send@0.16.2:
   version "0.16.2"
@@ -4426,6 +4529,11 @@ stream-throttle@^0.1.3:
   dependencies:
     commander "^2.2.0"
     limiter "^1.0.5"
+
+strftime@0.6.2:
+  version "0.6.2"
+  resolved "https://registry.yarnpkg.com/strftime/-/strftime-0.6.2.tgz#da4c12073cebee3cd60f4821940cc27b19d348a1"
+  integrity sha1-2kwSBzzr7jzWD0ghlAzCexnTSKE=
 
 strict-uri-encode@^1.0.0:
   version "1.1.0"
@@ -4751,12 +4859,22 @@ unc-path-regex@^0.1.0, unc-path-regex@^0.1.2:
   version "0.1.2"
   resolved "http://registry.npmjs.org/unc-path-regex/-/unc-path-regex-0.1.2.tgz#e73dd3d7b0d7c5ed86fbac6b0ae7d8c6a69d50fa"
 
+underscore.string@~2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/underscore.string/-/underscore.string-2.4.0.tgz#8cdd8fbac4e2d2ea1e7e2e8097c42f442280f85b"
+  integrity sha1-jN2PusTi0uoefi6Al8QvRCKA+Fs=
+
 underscore.string@~3.3.4:
   version "3.3.5"
   resolved "https://registry.yarnpkg.com/underscore.string/-/underscore.string-3.3.5.tgz#fc2ad255b8bd309e239cbc5816fd23a9b7ea4023"
   dependencies:
     sprintf-js "^1.0.3"
     util-deprecate "^1.0.2"
+
+underscore@~1.7.0:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/underscore/-/underscore-1.7.0.tgz#6bbaf0877500d36be34ecaa584e0db9fef035209"
+  integrity sha1-a7rwh3UA02vjTsqlhODbn+8DUgk=
 
 undertaker-registry@^1.0.0:
   version "1.0.1"
@@ -4934,6 +5052,13 @@ vinyl@^2.0.0:
     is-stream "^1.1.0"
     remove-trailing-separator "^1.0.1"
     replace-ext "^1.0.0"
+
+watchr@2.3.3:
+  version "2.3.3"
+  resolved "https://registry.yarnpkg.com/watchr/-/watchr-2.3.3.tgz#bd0d67b87a616d4c1cce43fe996d9b89f8d43864"
+  integrity sha1-vQ1nuHphbUwczkP+mW2bifjUOGQ=
+  dependencies:
+    bal-util "~1.15.4"
 
 when@^3.7.7:
   version "3.7.8"
