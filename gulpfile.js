@@ -29,14 +29,14 @@ gulp.task('jekyll-build', function (done) {
 /**
  * Rebuild Jekyll & do page reload
  */
-gulp.task('jekyll-rebuild', gulp.series('jekyll-build'), function () {
+gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
 	browserSync.reload();
 });
 
 /**
  * Wait for jekyll-build, then launch the Server
  */
-gulp.task('browser-sync', gulp.series('jekyll-build'), function() {
+gulp.task('browser-sync', ['jekyll-build'], function() {
 	browserSync({
 		server: {
 			baseDir: '_site'
@@ -47,7 +47,7 @@ gulp.task('browser-sync', gulp.series('jekyll-build'), function() {
 /**
  * Stylus task
  */
-gulp.task('stylus', function(cb){
+gulp.task('stylus', function(){
 		gulp.src('src/styl/main.styl')
 		.pipe(plumber())
 		.pipe(stylus({
@@ -57,7 +57,6 @@ gulp.task('stylus', function(cb){
 		.pipe(gulp.dest('_site/assets/css/'))
 		.pipe(browserSync.reload({stream:true}))
     .pipe(gulp.dest('assets/css'));
-		cb();
 });
 
 /**
@@ -88,17 +87,14 @@ gulp.task('imagemin', function() {
  * Watch html/md files, run jekyll & reload BrowserSync
  */
 gulp.task('watch', function () {
-	gulp.watch('src/styl/**/*.styl', gulp.series('stylus'));
-	gulp.watch('src/js/**/*.js', gulp.series('js'));
-	gulp.watch('src/img/**/*.{jpg,png,gif}', gulp.series('imagemin'));
-	gulp.watch(['*.html', '_includes/*.html', '_layouts/*.html', '_posts/*'], gulp.series('jekyll-rebuild'));
+	gulp.watch('src/styl/**/*.styl', ['stylus']);
+	gulp.watch('src/js/**/*.js', ['js']);
+	gulp.watch('src/img/**/*.{jpg,png,gif}', ['imagemin']);
+	gulp.watch(['*.html', '_includes/*.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild']);
 });
 
 /**
  * Default task, running just `gulp` will compile the stylus,
  * compile the jekyll site, launch BrowserSync & watch files.
  */
-gulp.task('default', gulp.series('js', 'stylus', 'browser-sync'),function(){
-	console.log('a');
-	return Promise.resolve('done');
-});
+gulp.task('default', ['js', 'stylus', 'browser-sync', 'watch']);
