@@ -29,8 +29,9 @@ gulp.task('jekyll-build', function (done) {
 /**
  * Rebuild Jekyll & do page reload
  */
-gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
+gulp.task('jekyll-rebuild', ['jekyll-build'], function (done) {
 	browserSync.reload();
+	done();
 });
 
 /**
@@ -47,17 +48,20 @@ gulp.task('browser-sync', ['jekyll-build'], function() {
 /**
  * Stylus task
  */
-gulp.task('stylus', function(){
-		gulp.src('src/styl/main.styl')
-		.pipe(plumber())
-		.pipe(stylus({
-			use:[koutoSwiss(), prefixer(), jeet(),rupture()],
-			compress: true
-		}))
-		.pipe(gulp.dest('_site/assets/css/'))
-		.pipe(browserSync.reload({stream:true}))
-    .pipe(gulp.dest('assets/css'));
-});
+gulp.task('stylus', function() {
+  gulp
+    .src('src/styl/main.styl')
+    .pipe(plumber())
+    .pipe(
+      stylus({
+        use: [koutoSwiss(), prefixer(), jeet(), rupture()],
+        compress: true,
+      })
+    )
+    .pipe(gulp.dest('_site/assets/css/'))
+    .pipe(gulp.dest('assets/css'))
+    .pipe(browserSync.reload({ stream: true }))
+})
 
 /**
  * Javascript Task
@@ -87,10 +91,10 @@ gulp.task('imagemin', function() {
  * Watch html/md files, run jekyll & reload BrowserSync
  */
 gulp.task('watch', function () {
-	gulp.watch('src/styl/**/*.styl', ['stylus']);
 	gulp.watch('src/js/**/*.js', ['js']);
 	gulp.watch('src/img/**/*.{jpg,png,gif}', ['imagemin']);
 	gulp.watch(['*.html', '_includes/*.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild']);
+	gulp.watch('src/styl/**/*.styl', ['stylus']);
 });
 
 /**
