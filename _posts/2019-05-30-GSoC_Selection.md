@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "GSoC, The Journey Begins"
+title: "GSoC_The_Journey_Begins"
 image: '/assets/GSoC.png'
-date: 29/5/2019
+date: 30/5/2019
 tags:
 - GSoC
 - Introductory Blog
