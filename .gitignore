@@ -2,3 +2,5 @@ _site
 .sass-cache
 node_modules
 _drafts
+yarn.lock
+package-lock.json
