@@ -93,7 +93,7 @@ gulp.task('imagemin', function() {
 gulp.task('watch', function () {
 	gulp.watch('src/js/**/*.js', ['js']);
 	gulp.watch('src/img/**/*.{jpg,png,gif}', ['imagemin']);
-	gulp.watch(['*.html', '_includes/*.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild']);
+	gulp.watch(['*.html', '_includes/*.html', '_layouts/*.html', '_posts/*','*.md'], ['jekyll-rebuild']);
 	gulp.watch('src/styl/**/*.styl', ['stylus']);
 });
 
