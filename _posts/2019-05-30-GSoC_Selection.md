@@ -6,7 +6,7 @@ date: 30/5/2019
 tags:
 - GSoC
 - Introductory Blog
-description: 'Introductory blog regarding my selection in GSoC program'
+description: 'Introductory blog regarding GSoC'
 categories:
 - GSoC
 ---
@@ -36,7 +36,7 @@ I planned to participate in this program and searched through the net for necess
 - Reading the student guide of google first should be the top priority, the guide in exhaustive well-written.
   - Understand the different phases of this program, see the timeline on GSoC's home page, read the guide accordingly and plan further.
 
-*In the I would like to emphasise that do not think of it as something of an "exam to crack" or "scoring high" in this. This is purely a learning experience, if you show your dedication in your work you submit, your enthusiasm, your commitment to this then that should be enough, showing your competitive nature sometimes bugs people off*  
+*In the end I would like to emphasise that do not think of it as something of an "exam to crack" or "scoring high" in this. This is purely a learning experience, if you show your dedication in your work you submit, your enthusiasm, your commitment to this then that should be enough, showing your competitive nature sometimes bugs people off*  
 ( this is my thinking only, and people are free to interpret this according to their ideology and even can ignore this completely ).  
 I will post more blogs under this topic explaining more points under this section. Currently, I have planned to post another blog explaining in detail:
 
@@ -45,6 +45,9 @@ I will post more blogs under this topic explaining more points under this sectio
 - Which organization to choose?
 
 Some other small points will also be there.  
+
+### My journey has started
+
 >I planned to participate in this program and searched throught the net for necessary how-tos.
 
-And I also got selected to work in this summer.
+And I also got selected to work in this summer and hence my journey has started.

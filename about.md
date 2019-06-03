@@ -16,11 +16,11 @@ I am a usually a fun ( at least that is what I think ) person to hang around, wh
 ### Important highlights
 
 - If you want to discuss manga, anime, movies, things like that with me.
-  - Post on my disqus acccount mostly, never on github or on the blog if you know I do not know you.
+  - Post on my disqus acccount mostly, never on github or on the blog if you know that I do not know you.
   - If you know that I know you then post on messenger also.
 
 - If hacking or tech related stuff.
-  - Post on reddit if you know I do not know you.
+  - Post on reddit if you know that I do not know you.
   - You can post on messenger also if you know that I know you.
 
 - If there is a problem you find with this blog, please open an issue in the repo **[1]** and try to give the appropriate solution to it as well ( appreciated a lot ).  
