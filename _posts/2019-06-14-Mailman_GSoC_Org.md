@@ -6,7 +6,7 @@ date: 14/6/2019
 tags:
 - GSoC
 - GNU Mailman
-description: 'Short explanation regarding my GSoC work and org'
+description: 'Short explanation regarding my organization and my project'
 categories:
 - GSoC
 ---
@@ -65,5 +65,10 @@ Mail not being received to whome it was intended to has lots and lots of reasons
 ```Oh! Snap mail to x@ymail.com was unable to deliver, something must wrong somewhere```  
 **ME**  
 Reads: `something must be wrong somewhere`
-
-### Description of My Project
+![That is really helpful meme](https://github.com/berserker1/berserker1.github.io/blob/master/assets/wow-just-wow.jpg?raw=true)  
+**See, that's not helpful at all!** (except being a meme content)  
+We have to rule out all other options before taking the step of removing the subscription because if we removed the subscription of users whose emails are totally fine then that will be really bad as a consumer experience.  
+This problem was tackled in the previous Mailman2 version, but the new version had slightly modified funtions and should the process be same as the previous version or not was a topic of discussion, finally it was made a GSoC project this year for more valuable inputs and implementation.  
+I took up this project and thought upon a detailed implementation. The implementation I will share in the upcoming blog post as this one just too lengthy now I suppose.  
+`Thanks for reading,`  
+`Cheers!`
