@@ -15,7 +15,7 @@ Its logo:
 [GNU Mailman](https://en.wikipedia.org/wiki/GNU_Mailman) is a free software under the GNU Project, it is licensed under the GNU General Public License. This software basically manages various electronic mailing lists and provides lots of features on how to handle them. Mailman has been a regular organization under the GSoC project.
 The current maintainer of this project and one of my mentors is Abhilash Raj (handle: [maxking](https://asynchronous.in)).
 
-### Description of my work
+### The Feature, The Decription and The Problem
 
 As I mentioned the software has various features, one of the most important one being **extracting and handling bounces** which is my project in this year's GSoC. To fully understand what my role is and how do I intend to approach it we need to understand some concepts and then the underlying problem.  
 `First, let's explain bounces in short.`
@@ -57,3 +57,13 @@ There are some solutions to this the most common one being [VERP](https://en.wik
     >- contents: example.org was unable to deliver the following message to bob: ...  
     >From this bounce message the mailing list manager can deduce that a message to bob@example.org must have failed.
     >This example shows the simplest possible method of matching a VERP to a list subscriber: the entire recipient address is included within the return path, with the at sign replaced by an equals sign because a return path with two at signs would be invalid. Other encoding schemes are possible.
+
+So we understood that using VERP we can identify exactly the emails in our roster to which when we send our emails, the bounces are being generated. This whole above explanation is the first part of bounce handling, basically the `extracting part` where we had all the required information we need.  
+Now we have all the info, now what do to? Disable their subscriptions immediately? .......Not exactly, see here is where the problem starts.  
+Mail not being received to whome it was intended to has lots and lots of reasons, bad recipient address is just one of them. Their can be connection issues at all sort of levels which generate bounces. Speaking coarsely we receive the bounce message something like  
+**Bounce Message**  
+```Oh! Snap mail to x@ymail.com was unable to deliver, something must wrong somewhere```  
+**ME**  
+Reads: `something must be wrong somewhere`
+
+### Description of My Project
