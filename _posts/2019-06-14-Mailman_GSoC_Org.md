@@ -60,9 +60,9 @@ There are some solutions to this the most common one being [VERP](https://en.wik
 
 So we understood that using VERP we can identify exactly the emails in our roster to which when we send our emails, the bounces are being generated. This whole above explanation is the first part of bounce handling, basically the `extracting part` where we had all the required information we need.  
 Now we have all the info, now what do to? Disable their subscriptions immediately? .......Not exactly, see here is where the problem starts.  
-Mail not being received to whome it was intended to has lots and lots of reasons, bad recipient address is just one of them. Their can be connection issues at all sort of levels which generate bounces. Speaking coarsely we receive the bounce message something like  
+Mail not being received to whom it was intended to has lots and lots of reasons, bad recipient address is just one of them. Their can be connection issues at all sort of levels which generate bounces. Speaking coarsely we receive the bounce message something like  
 **Bounce Message**  
-```Oh! Snap mail to x@ymail.com was unable to deliver, something must wrong somewhere```  
+```Oh! Snap mail to x@ymail.com was unable to deliver, something must be wrong somewhere```  
 **ME**  
 Reads: `something must be wrong somewhere`
 ![That is really helpful meme](https://github.com/berserker1/berserker1.github.io/blob/master/assets/wow-just-wow.jpg?raw=true)  
