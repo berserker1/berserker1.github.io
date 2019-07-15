@@ -5,7 +5,6 @@ image: '/assets/GSoC.png'
 date: 30/5/2019
 tags:
 - GSoC
-- Introductory Blog
 description: 'Introductory blog regarding GSoC'
 categories:
 - GSoC
