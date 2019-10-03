@@ -1,6 +1,6 @@
 .post
     +above(rem(1450px))
-        margin-left: 347px
+        margin-left: 500px
     h1, h2, h3
         &:before
             color main
@@ -25,10 +25,10 @@
 .post-content
     padding rem(px) 0
     img
-        max-width 60%
+        max-width 40%
         margin rem(30px) auto
         display block
-    p, h1, h2, h3, h4,ul,ol, .tags, iframe
+    p, h1, h2, h3, h4,ul,ol, iframe
         padding 0 rem(30px)
         margin 0 auto rem(30px)
         mainFont(300)
@@ -37,12 +37,23 @@
         letter-spacing 0.01rem
         +above(cut)
             font-size rem(20px)
+    .tags
+        padding 0 rem(30px)
+        margin 0 auto rem(30px)
+        mainFont(300)
+        font-size rem(30px)
+        line-height 2
+        letter-spacing 0.1rem
+        +above(cut)
+            font-size rem(20px)
     p,li
+        padding 0 rem(30px)
         color texts
         code
             color colorcode
     a
         mainFont(300)
+        padding 0
         color main
         text-decoration none
         border-bottom 2px solid main

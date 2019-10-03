@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "GSoC_The_Journey_Begins"
+title: "GSoC The Journey Begins"
 image: '/assets/GSoC.png'
 date: 30/5/2019
 tags:
