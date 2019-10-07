@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "GSoC The Journey Begins"
-image: '/assets/GSoC.png'
+image: "/assets/img/GSoC.jpg"
 date: 30/5/2019
 tags:
 - GSoC
@@ -12,7 +12,7 @@ categories:
 
 ## Introduction about the Google Summer of Code (GSoC) program
 
-![GSoC image, courtesy of google](https://raw.githubusercontent.com/berserker1/berserker1.github.io/master/assets/GSoC%20.png)
+![GSoC image, courtesy of google]({{site.baseurl}}{{page.image}})
 
 According to Google itself
 >Google Summer of Code is a global program focused on introducing students to open source software development. Students work on a 3 month programming project with an open source organization during their break from university.
