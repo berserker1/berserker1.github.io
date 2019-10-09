@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "GNU Mailman Organization"
-image: '/assets/Gnu_mailman_logo.png'
+image: '/assets/img/Gnu_mailman_logo.png'
 date: 14/6/2019
 tags:
 - GSoC
@@ -11,7 +11,7 @@ categories:
 - GSoC
 ---
 Its logo:
-![GNU Mailman Logo](https://raw.githubusercontent.com/berserker1/berserker1.github.io/master/assets/Gnu_mailman_logo.png)
+![GNU Mailman Logo]({{page.image}})
 [GNU Mailman](https://en.wikipedia.org/wiki/GNU_Mailman) is a free software under the GNU Project, it is licensed under the GNU General Public License. This software basically manages various electronic mailing lists and provides lots of features on how to handle them. Mailman has been a regular organization under the GSoC project.
 The current maintainer of this project and one of my mentors is Abhilash Raj (handle: [maxking](https://asynchronous.in)).
 
@@ -65,7 +65,7 @@ Mail not being received to whom it was intended to has lots and lots of reasons,
 ```Oh! Snap mail to x@ymail.com was unable to deliver, something must be wrong somewhere```  
 **ME**  
 Reads: `something must be wrong somewhere`
-![That is really helpful meme](https://github.com/berserker1/berserker1.github.io/blob/master/assets/wow-just-wow.jpg?raw=true)  
+![That is really helpful meme](/assets/img/wow-just-wow.jpg)  
 **See, that's not helpful at all!** (except being a meme content)  
 We have to rule out all other options before taking the step of removing the subscription because if we removed the subscription of users whose emails are totally fine then that will be really bad as a consumer experience.  
 This problem was tackled in the previous Mailman2 version, but the new version had slightly modified funtions and should the process be same as the previous version or not was a topic of discussion, finally it was made a GSoC project this year for more valuable inputs and implementation.  
