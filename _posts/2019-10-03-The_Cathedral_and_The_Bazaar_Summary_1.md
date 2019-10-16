@@ -163,6 +163,7 @@ The author started to revamp the codebase as to make some major changes. He also
   - The author explains this to be a:
   >A general principle that's good for programmers to keep in mind, especially in langauges like C that don't do dynamic typing.
   - *Not much research on this is done on my side regarding this approach as I admit to being naive at this point to comment on this. I am however, open to discussion in the comments to learn about this maybe even add it to my post with reference to the one who contributed.*
+  - *Edit: You can check out [this](http://disq.us/p/24yyokx) comment written below, the one who posted this has a fair amount of skill (one can easily check).*
 
 - **If You Treat Your Beta-Testers As If They're Your Most Valuable Resource, They Will Respond By Becoming Your Most Valuable Resource.**
   - After applying the `bazaar` model the result were immediate and great, the beta-testers were contributing to great extent, the quality of contribution was great and the project's development was in full throttle.
