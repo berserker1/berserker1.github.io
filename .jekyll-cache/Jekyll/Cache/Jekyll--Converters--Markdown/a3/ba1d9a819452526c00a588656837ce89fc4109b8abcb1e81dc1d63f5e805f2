@@ -1,0 +1,407 @@
+I"3�<p><em>Its better to watch this article in <code class="language-plaintext highlighter-rouge">Desktop View</code> if you are using some short screen device.</em><br />
+Book Cover page <em>taken from the O’REILLY site.</em>
+<img src="/assets/img/cathedral_and_bazaar_book_cover.jpg" alt="Cover page of The Cathedral And The Bazaar" />
+This is the first post of a series of blog posts on a detailed summary of the book <strong>The Cathedral &amp; The Bazaar Musings on Linux and Open Source by an Accidental Revolutionary, revised and expanded edition by O’REILLY</strong>. You can see about the book <a href="http://shop.oreilly.com/product/9780596001087.do">here</a>.<br />
+This is my first attempt to write something like this so please bear with me as my intentions are only pure. I was inspired to write this type of posts from a senior in my institute who writes <a href="http://www.bauva.com/book_summary/">stuff</a> like this, the books on which the posts have been written are top notch, do check it out.</p>
+
+<hr />
+
+<h3 id="about-the-book-and-why-i-chose-it">About The Book And Why I Chose It</h3>
+
+<p>This book, written by <a href="https://en.wikipedia.org/wiki/Eric_S._Raymond">Eric S. Raymond</a>, introduces open source methodology, its revolution in the software development industry as a whole. The author very extensively puts the reasons for this ethical as well as logical. He argues that this type of model for building various things are very powerful in terms of speed as well as quality. Various examples are given including his own product, <a href="https://en.wikipedia.org/wiki/Fetchmail">Fetchmail</a>.</p>
+
+<ul>
+  <li>
+    <p>The book in detail gives reasons that <code class="language-plaintext highlighter-rouge">Open-Source</code> is not just an ethical reason, meaning people do not put forward their source code of the tools they made, hence making the users co-developers as well as debuggers; just because they are doing the  <code class="language-plaintext highlighter-rouge">morally right</code> thing in their own perspective (<em>although this reason alone is compelling enough for many</em>). It is also better form of development and the complex softwares it has produced, to the surprise of many are state-of-art in their respective domains (<em>take <a href="https://en.wikipedia.org/wiki/Linux">Linux</a> for example</em>).</p>
+  </li>
+  <li>
+    <p>Over the internet you will see various people at eminent positons in the IT industry recommending this to people who will be doing some form of software development in their lifetime. That is why I am reading this book, in order to learn extensively about <code class="language-plaintext highlighter-rouge">Open-Source</code> development and hopefully include various of these principles, understand why I am applying the already existing ones and formalize them, in <a href="https://kossiitkgp.org/">KOSS</a> in which I am as of now.</p>
+  </li>
+  <li>
+    <p>Also I am determined to write an extensive summary for anyone who wishes to understand in short (<em>or maybe discuss in the comment section</em>) the various concepts the book puts forward.
+My main aim is to break down and explain the relevant points (<em>according to my own understanding</em>) and side by side referencing the snippets which I find necessary, of the texts in the book.</p>
+  </li>
+</ul>
+
+<hr />
+<p>This blog post discusses only the <strong>first section, The Cathedral And The Bazaar</strong> as this section has rich enough content, so only a dedicated and individual post to it will do justice to the knowledge it wants us to obtain (<em>my opinion entirely</em>).</p>
+
+<hr />
+
+<p>Below is the detailed summary chapter-wise. Each chapter may also have sub-sections which are clearly defined below.</p>
+
+<h3 id="1the-cathedral-and-the-bazaar">1.The Cathedral And The Bazaar</h3>
+
+<p>The author’s writing style is the division of his work into various sections, each of which lays down certain explanations along with building the story. Along with explaining certain concepts in the following subsections, various principles the author breaks down for us in each subsection, to understand, and hoping for us to follow. They are stated and explained as follows in the same order as written in the book.</p>
+
+<h4 id="athe-cathderal-and-the-bazaar">a.The Cathderal And The Bazaar</h4>
+
+<p>(<em>Really awkward when the sub-section name is same as that of the section</em>)<br />
+The author introduces to us his own view of development that not only him but many emminent programmers of that time believed very much to be fundamental and true and how <a href="https://en.wikipedia.org/wiki/Linus_Torvalds">Linus Torvald</a> changed the perception drastically.</p>
+<blockquote>
+  <p>I had released a good deal of open-source software onto the Net, developing or co-developing several programs (nethack, Emacs’s VC and GUD modes,xlife, and others) that are still in wide use today. I thought I knew how it was done.</p>
+
+  <p>Linux overturned much of what I though I knew. I had been preaching the Unix gospel of small tools, rapid prototyping, and evolutionary programming for years. But I also believed that there was a certain complexity above which a more centralized, <em>a priori</em> approach was required. I believed that the most important software (operating systems and really large tools like the Emacs programming editor) needed to be built like cathedrals, carefully crafted by individual wizards or small bands of mages working in the splendid isolation, with no beta to be released before its time.</p>
+
+  <p>Linux Torvald’s style of development– release early and often, delegate everython you can, be open to the point of promiscusity–came as a surprise. No quiet, reverent cathedral-building here–rather, the Linux community seemed to resemble a great babbling bazaar of different agendas and approaches (aptyl symbolized by the Linux archive sites, which would take submissions from <em>anyone</em>) out of which a coherent and stable system could seemingly emerge only by a succession of miracles.</p>
+</blockquote>
+
+<ul>
+  <li>
+    <p>One important observation was, somehow this haphazard development did not spiral out in confusion but actually was collaborative somehow and went at a speed barely imaginable to cathedral-builders.</p>
+  </li>
+  <li>
+    <p>The author was not able to understand why this type of development altohugh successful (<em>cause certainly everybody immeditaly realized Linux’s portability and effectiveness and it was the best version of Unix by many standards</em>) was working the way it was.</p>
+  </li>
+  <li>
+    <p>However, he got an open-source project and he used this opportunity to run its development in the <strong>bazaar</strong> style mode.</p>
+  </li>
+</ul>
+
+<hr />
+
+<h4 id="bthe-mail-must-get-through">b.The Mail Must Get Through</h4>
+
+<p>The author tells how he got hold of maintaining a whole program named <code class="language-plaintext highlighter-rouge">popclient</code>.</p>
+
+<ul>
+  <li><strong>Every Good Work Of Software Starts By Scratching A Developer’s Personal Itch.</strong>
+    <ul>
+      <li>With the current scenario <code class="language-plaintext highlighter-rouge">Eric</code> was working, he had a dire need of a <code class="language-plaintext highlighter-rouge">POP3</code> client but there was an obvious feature it was missing.</li>
+      <li>For the above mentioned problem he theorized that many developers work only for the money and as soon as they get they do not worry more about the software. This behaviour being non-existent in the Linux world (<em>as people work/create many open-source projects of their choice/liking</em>) may be the reason for average quality of the softwares in their world being high in their world.</li>
+    </ul>
+  </li>
+  <li><strong>Good Programmers Know What To Write, Great Ones Know What To Rewrite (And Reuse).</strong>
+    <ul>
+      <li>The author greatly emphasise the point of <code class="language-plaintext highlighter-rouge">Constructive Laziness</code>, in his own words.
+        <blockquote>
+          <p>An important trait of great ones is constructive laziness. They know that you get an A not for effort but for the results, and that it’s almost always easier to start from a good partial solution than from nothing at all.</p>
+        </blockquote>
+      </li>
+      <li>To solve his own problem he began looking for an existing client online to use as his own developmental base.</li>
+      <li>His earlier choice was <code class="language-plaintext highlighter-rouge">fetchpop</code> which could only handle <code class="language-plaintext highlighter-rouge">POP3</code>. He made several contributions to it. Later he stumbled upon another named <code class="language-plaintext highlighter-rouge">popclient</code> which was better written, had multiple protocol support.</li>
+    </ul>
+  </li>
+  <li><strong>Plan To Throw One Away; You Will, Anyhow.</strong>
+    <ul>
+      <li>The book explains that in many cases people do not understand the problem well unless they start making a solution, the second time you probably will implement a well planned solution. He considered working for <code class="language-plaintext highlighter-rouge">fetchpop</code> his <code class="language-plaintext highlighter-rouge">first attempt</code> and now considered switching to <code class="language-plaintext highlighter-rouge">popclient</code>.</li>
+    </ul>
+  </li>
+  <li><strong>If You Have The Right Attitude, Interesting Problems Will Find You.</strong>
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">Eric</code> saw had various ideas he could implement in <code class="language-plaintext highlighter-rouge">popclient</code>, many interesting problems he could. The execution of these ideas requried various major changes.</li>
+    </ul>
+  </li>
+  <li><strong>When You Lose Interest In A Program, Your Last Duty To It Is To Hand It Off To A Competent Successor.</strong>
+    <ul>
+      <li>The maintainer of <code class="language-plaintext highlighter-rouge">popclient</code> was not interested in the project anymore, he saw <code class="language-plaintext highlighter-rouge">Eric</code> as a worthy successor as <code class="language-plaintext highlighter-rouge">Eric</code> had contributed some patches and shown promise, so he gave ownsership to him.</li>
+      <li>This was done keeping in mind the best interest of the software and not considering anyone’s ego.</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h4 id="cthe-importance-of-having-users">c.The Importance Of Having Users</h4>
+
+<p>The one thing the author realized as critical in the open-source culture is treating your users as hackers too.</p>
+<blockquote>
+  <p>Another strength of Unix tradition, one that Linux pushes to a happy extreme, is that a lot of users are hackers too. Because source code is available, they can be <em>effective</em> hackers. This can be tremendously useful for shortening debugging time.</p>
+</blockquote>
+
+<p>The book adds another conclusion on top of the above mentioned concept.</p>
+
+<ul>
+  <li><strong>Treating Your Users As Co-Developers Is Your Least-Hassle Route To Rapid Code Improvement And Effective Debugging.</strong>
+    <ul>
+      <li>The power of applying this concept was actually underestimated by many until <code class="language-plaintext highlighter-rouge">Linus</code> applied it to the extreme and everyone saw the result.</li>
+      <li>Example about the development model of <code class="language-plaintext highlighter-rouge">Emacs Lisp Library</code> is mentioned in the book.
+        <blockquote>
+          <p>In contrast to the cathedral building style of the Emacs C core and most other GNU tools, the evolution of the Lisp code pool was fluid and very user-driven. Ideas and prototype modes were often rewritten three or four times before reaching a stable final form. And loosely-coupled collaborations enabled by the Internet <em>a la</em> Linux, were frequent.</p>
+        </blockquote>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h4 id="drelease-early-release-often">d.Release Early, Release Often</h4>
+
+<p>Many including the author believed that for big projects that releasing versions too hastily is bad as the code will be buggy and this will give a bad reputation to the users. The main objective was for the users to see as few bugs as possible. This conception overall reinforced the <code class="language-plaintext highlighter-rouge">Cathedral Building Style</code>.</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Linus</code> did the opposite and somehow the product <code class="language-plaintext highlighter-rouge">Linux</code> which he was working on was going super fast and efficient.
+    <ul>
+      <li>According to the author himself.
+        <blockquote>
+          <p>Linus’s open development policy was the very opposite of cathedral-building. Linux’s Internet archives were burgeoning, multiple distributions were being floated. And all of this was driven by an unheard-of-frequency of core system releases.</p>
+
+          <p>Linus wsa treating his users as co-developers in the most effective possible way:</p>
+        </blockquote>
+      </li>
+    </ul>
+  </li>
+  <li><strong>Release Early, Release Often. And Listen To Your Customers</strong>
+    <ul>
+      <li>For the development of <code class="language-plaintext highlighter-rouge">Linux</code> this concept was scaled to much bigger level as the product to be designed was also of great complexity.</li>
+      <li>The author explains that doing this will be sort of <em>ego-satisying reward for their work</em>, hence constant release will be somewhat of a continuous stimulus to them.</li>
+    </ul>
+  </li>
+  <li><strong>Given A Large Enough Beta-Tester And Co-Developer Base, Almost Every Problem Will be Characterized Quickly And The Fix Obvious To Someone.</strong>
+    <ul>
+      <li>Also stated as <strong>Given enough eyballs, all bugs are shallow</strong>, the author dubbed this as <strong>Linus Law</strong>.</li>
+      <li>The above mentioned law is theorised by the book to be the core difference between <code class="language-plaintext highlighter-rouge">bazaar style</code> and <code class="language-plaintext highlighter-rouge">cathedral-building style</code> of development models.</li>
+      <li>It also states that <em>it can be the case that, one person identifies the problem, another points out the reason and a third one fixes it</em>. Given the above mentioned rule is applied (<em>meaning beta-testers are large</em>), then this process will happen rapidly.</li>
+      <li>A question can arise in one’s mind after reading all of this.<br />
+<em>If such large amount of people are doing debugging and development, then shouldn’t the amount of duplicacy increases as well as the cost of managing these people which can theoretically decrease the efficiency?</em></li>
+      <li>The author replies
+        <blockquote>
+          <p>Although debugging requires communication to the developer, not much communication is required between debuggers.</p>
+
+          <p>In practice theoretical loss of efficiency due to duplication work by debuggers almost never seems to be an issue in the Linux world. One effect of “release early and often” policy is to minimize such duplication by propagating fed-back fixes quickly.</p>
+        </blockquote>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h4 id="emany-eyeballs-tame-complexity">e.Many Eyeballs Tame Complexity</h4>
+
+<p>Here is an extensive discussion upon the reason for the work in the <code class="language-plaintext highlighter-rouge">bazaar model</code> to be efficient and fast, especially if we talk in the context of finding and fixing bugs. Several facts are presented to support the claim:</p>
+
+<ul>
+  <li>Making the source code public gives the testers to identify the bug at the code level rather than reporting only the surface problem.
+    <ul>
+      <li>The author writes:
+        <blockquote>
+          <p>Non-source-aware users tend to report only surface symptoms; they take their environment for granted, so they a) omit critical background data, and b) seldom include a reliable recipe for reproducing the bug.</p>
+
+          <p>Practically there is a huge difference in leverage for the developer between the kind of bug report that just reports externally visible symptoms and the kind that hooks directly to the developer’s source-code-based mental representation of the program.</p>
+
+          <p>Most bugs, most of the time, are easily nailed given even an incomplete but suggestive characterization of their error conditions at source-code level.</p>
+        </blockquote>
+      </li>
+    </ul>
+  </li>
+  <li>Another important factor is the <strong>Brooks’s Law</strong>.
+    <ul>
+      <li>It states that <strong>Adding more programmers to a late project makes it later.</strong></li>
+      <li>This law assumes that the <code class="language-plaintext highlighter-rouge">communication model</code> of all the people involved in building the software is a <code class="language-plaintext highlighter-rouge">complete graph</code> (<em>meaning is communicating with every other person</em>). The preceeding theory is that bugs generally arise at the inteface of different poeple’s contributions. To solve this communication is required, the complexity of which rises <code class="language-plaintext highlighter-rouge">quadratically</code> (<em>if the assumption of complete graph holds</em>).</li>
+      <li>In the case of <code class="language-plaintext highlighter-rouge">bazaar model</code> the beta-testers (<em>the user-base which are being effective hackers</em>) do not need to necessarily make contact with each other. This results in little overhead.
+        <ul>
+          <li>As stated in the book:
+            <blockquote>
+              <p>But on open-source projects, the halo developers work on what are in effect separable parallel subtasks and interact with each other very little; code changes and bug reports stream through the core groups, and only <em>within</em> hat small core group we pay the full Brooksian overhead.</p>
+            </blockquote>
+          </li>
+        </ul>
+      </li>
+      <li>Another important observation is made by the author regarding bug-detection and solving:
+        <ul>
+          <li>Many complex errors have different <code class="language-plaintext highlighter-rouge">trace paths</code> from the surface level, if more independent beta-testers will be there then there is a high chance for atleast one person to find the less complexity path to the bug.</li>
+          <li>From the above point another question arises.<br />
+<em>If the amount of conrtributors and beta-testers are large and several of them are trying to identify a complex bug, then some amount of people will be going through a complex path and the other amount will be taking a short path, the people going through the short path will identify the bug in the source code early and hopefully it will be fixed, but then won’t the people who took the long path will be wasting their time?</em>
+            <ul>
+              <li>The author replies by laying down the complete understanding of this concept which automatically clears the question:
+                <blockquote>
+                  <p>A single developer sampling those paths sequentially will be likely to pick a difficult trace path on the first try as an easy one.</p>
+
+                  <p>On the other hand, suppose many people are trying trace paths in parallel while doing rapid releases. Then it is likely one of them will find the easiest path immediately, and nail the bug in a much shorter time. The project maintainer will see that, ship a new release, and the other people running traces on the same bug will be able to stop before having spent too much time on their more difficult tracees.</p>
+                </blockquote>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h4 id="fwhen-is-a-rose-not-a-rose">f.When Is A Rose Not A Rose</h4>
+
+<p>The author started to revamp the codebase as to make some major changes. He also wanted to test the <code class="language-plaintext highlighter-rouge">bazaar model</code>, so he started doing the required principles for this model like making early releases, announcing more often, listening to beta-tester etc.</p>
+
+<ul>
+  <li><strong>Smart Data Structures And Dumb Code Works A Lot Better Than Other Way Around.</strong>
+    <ul>
+      <li>This is the author’s advice especially to people heavily indulged in C programming.</li>
+      <li>The author explains this to be a:
+        <blockquote>
+          <p>A general principle that’s good for programmers to keep in mind, especially in langauges like C that don’t do dynamic typing.</p>
+        </blockquote>
+      </li>
+      <li><em>Not much research on this is done on my side regarding this approach as I admit to being naive at this point to comment on this. I am however, open to discussion in the comments to learn about this maybe even add it to my post with reference to the one who contributed.</em></li>
+      <li><em>Edit: You can check out <a href="http://disq.us/p/24yyokx">this</a> comment written below, the one who posted this has a fair amount of skill (one can easily check).</em></li>
+    </ul>
+  </li>
+  <li><strong>If You Treat Your Beta-Testers As If They’re Your Most Valuable Resource, They Will Respond By Becoming Your Most Valuable Resource.</strong>
+    <ul>
+      <li>After applying the <code class="language-plaintext highlighter-rouge">bazaar</code> model the result were immediate and great, the beta-testers were contributing to great extent, the quality of contribution was great and the project’s development was in full throttle.</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h4 id="gpopclient-becomes-fetchmail">g.Popclient Becomes Fetchmail</h4>
+
+<p>The book dives more into the development of the project <code class="language-plaintext highlighter-rouge">Fetchmail</code> the author was working upon.<br />
+In this section the author explains a simple idea suggested by one of the userbase which can immediately result in making other competitors obsolete.<br />
+Several observations he made regarding the refinement and implementation of it:</p>
+
+<ul>
+  <li><strong>The Next Best Thing To Having Good Ideas Is Recognizing Good Ideas From Your Users. Sometimes The Latter Is Better.</strong>
+    <ul>
+      <li>When the beta-testers are large enough to form a big resource pool, then ideas start to come in and the maintainer can already see healthy discussions regarding the pros adn cons of the feature start to happen resulting in the refinement of the concept.</li>
+      <li>So its high chance that the idea would be implementation worthy, ignoring every input by the userbase and relying only on your skill is bad practice in the <code class="language-plaintext highlighter-rouge">bazaar model</code>.
+        <ul>
+          <li>The author himself states:
+            <blockquote>
+              <p>So I believe the fetchmail project succeded partly because I restrained my tendency to be clever; this argues (at least) against design originality being essential for successful bazaar projects. And consider Linux. Suppose Linus Torvalds had been trying to pull off funadmental innovations in operating system design during development; does it seem at all likely that the resulting kernel would be as stable and successful as what we have?</p>
+            </blockquote>
+          </li>
+        </ul>
+      </li>
+      <li>This does not at all means doing no innovative part of your own and just complying to with whatever the userbase wants. This actually means <code class="language-plaintext highlighter-rouge">Powerful knack for recognizing good design and integrating it into the project</code>.</li>
+    </ul>
+  </li>
+  <li><strong>Often, The Most Striking And Innovative Solutions Come From Realizing That Your Concept Of The Problem Was Wrong.</strong>
+    <ul>
+      <li>This does not need much explanation, analysing the problem with a different angle can yield a viable solution.</li>
+      <li>The author has explained this using his own problem he faced while developing <code class="language-plaintext highlighter-rouge">Fetchmail</code>.(<em>But that technical jargon is not included here in this post as that is not the objective of this post</em>)</li>
+    </ul>
+  </li>
+  <li><strong>“Perfection (In Design) Is Achieved Not When There Is Nothing More To Add, But Rather When There Is Nothing More To Take Away.”</strong>
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">Eric</code> has applied this ideology and wants to share with us.</li>
+      <li>This quote, as mentioned in the book; is said by <a href="https://en.wikipedia.org/wiki/Antoine_de_Saint-Exupéry">Antoine de Saint-Exupéry</a>.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>At this point, the author identifies his postion of now to the readers, of being able to sufficiently made major changes to <code class="language-plaintext highlighter-rouge">popclient</code>, added one core feature signifying uniqueness, now the project was in its own right a new one, he now needed to give this project a new identity, so the author named it <code class="language-plaintext highlighter-rouge">Fetchmail</code>.</p>
+
+<hr />
+
+<h4 id="hfetchmail-grows-up">h.Fetchmail Grows Up</h4>
+
+<p>Author adds more experience he learned as the project evolved.</p>
+
+<ul>
+  <li>
+    <p>One important observation is that many successful piece of software were developed on the base of other softwares. Using the existing ideas and pushing them to extreme to cross thresholds is the important part.</p>
+  </li>
+  <li><strong>Any Tool Should Be Useful In The Expected Way, But A Truly Great Tool Lends Itself To Uses You Never Expected.</strong>
+    <ul>
+      <li>Here the writer out of its own experience ponders upon the fact that, when implementing some feature/design changes with some view in mind, can also lead to some other benefit you never have thought of at first.</li>
+      <li>The above point usually happens when you have the <em>robustness</em> and <em>simplicity</em> whenever you make some development to the existing product.</li>
+    </ul>
+  </li>
+  <li><strong>When Writing Gateway Software Of Any Kind, Take Pains To Disturb The Data Stream As Little As Possible – And never throw away information unless the recipient forces you to!</strong>
+    <ul>
+      <li><em>This is specifically to tech so reader may or may not read it.</em></li>
+      <li>The author emphasise the importance of keeping clean and minimal code (<em>which he was maintaining</em>) so as to not disturbing the flow of data when required. When there was a demand for <a href="https://stackoverflow.com/questions/3384065/whats-8bitmime">8 bit MIME</a>, it was easy thing to do as unused bits he already kept for him to use.</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h4 id="ia-few-more-lessons-from-fetchmail">i.A Few More Lessons From Fetchmail</h4>
+
+<p><em>The writer here emphasise more technical knowledge and tips, readers may or may not read this.</em></p>
+
+<ul>
+  <li><strong>When Your Language Is Nowhere Turing Complete, Syntactic Sugar Can Be Your Friend.</strong>
+    <ul>
+      <li>See meaning of <a href="https://en.wikipedia.org/wiki/Turing_completeness">Turing Completeness</a> for reference.</li>
+      <li>If the language will tend to be more english-like then parsing can be proved costly.</li>
+      <li>If your language has many restrictions and it is not much powerful, then using some predefine things, or dressing it up will be a good practice for people to use.</li>
+    </ul>
+  </li>
+  <li><strong>A Security System Is Only As Secure As Its Secret. Beware Of Pseudo-Secrets.</strong></li>
+</ul>
+
+<hr />
+
+<h4 id="jnecessary-preconditions-for-the-bazaar-style">j.Necessary Preconditions For The Bazaar Style</h4>
+
+<p>Here all conditions are summed up for starting one’s own <code class="language-plaintext highlighter-rouge">bazaar style</code> developement of their project. Many points in the above sections are recapped in this one section.</p>
+
+<ul>
+  <li>Familiarty with coding and hacking skill.</li>
+  <li>Better to start upon a base rather than to work from scratch up.
+    <ul>
+      <li>The author writes:
+        <blockquote>
+          <p>It’s fairly clear one cannot code form the ground up in bazaar style. One can test, debug and improve in bazaar style, but it would be very hard to originate a project in bazaar mode. Linus didn’t try it. I didn’t either. Your nascent developer community needs to have something runnable and testable to play with.</p>
+        </blockquote>
+      </li>
+      <li><em>My Opinion</em>
+        <ul>
+          <li>I however do not completely agree to the this idea, one can definitely say for sure that most of the ideas and projects one can try to start working on, would have been done by someone to certaing degree in the open source world and its better to use it as a base; but this does not nullify the fact that open-source community is stagnant of completely new ideas to work upon. Every year someone would have made (or started to make) a project nobody had worked upon before.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Able to recognize good ideas suggested by the userbase.</li>
+  <li>Good communication skills for motivating, attracting people and increasing your userbase.</li>
+</ul>
+
+<hr />
+
+<h4 id="ithe-social-context-of-open-source-software">i.The Social Context Of Open-Source Software</h4>
+
+<p>The author here try to generalize the ideas, put forward by the <code class="language-plaintext highlighter-rouge">bazaar model</code> as a general principle one can follow.</p>
+
+<ul>
+  <li><strong>To Solve An Interesting Problem, Start By Finding A Problem That Is Interesting To You.</strong>
+    <ul>
+      <li>We can already see this in practice especially in the field of computer-science, in the field of technilogy as a whole. New features are added because somebody earlier had a problem doing certain task. <code class="language-plaintext highlighter-rouge">Fetchmail</code> is also the result of this.</li>
+    </ul>
+  </li>
+  <li>Again the concept of contributions by open-sourcing the code is explained, psychologically this time; with providing a reference.
+    <ul>
+      <li>The author writes that from <a href="https://en.wikipedia.org/wiki/Gerald_Weinberg">Gerald Weinberg’s</a> book <a href="https://dl.acm.org/citation.cfm?id=536771">The Psychology of Computer Programming</a>, he explains:
+        <blockquote>
+          <p>In his discussion of egoless programming, Weingberg observed that in shops where developers are not territorial about their code, and encourage other people to look for bugs and potential improvements in it, improvement happens dramatically faster than elsewhere.</p>
+        </blockquote>
+      </li>
+      <li><em>My Opinion</em>
+        <ul>
+          <li>I think this concept can be definitely applied to other areas of science, it may be in application as of now (<em>I do not know, but am considering the possibility</em>) and I would like to think we have somehow <code class="language-plaintext highlighter-rouge">reinvented</code> it in our field of development specifically.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Cheap method of communication and contribution was important, hence as the Internet boomed so the adoption of <code class="language-plaintext highlighter-rouge">bazaar model</code>.
+    <ul>
+      <li>An interesting observation is noted down in the book:
+        <blockquote>
+          <p>I don’t think it’s a coincidence that the gestation period of Linux coincided with the birth of the World Wide Web, and that Linux left its infancy during the same period in 1993-1994 that saw the takeoff of the ISP industry and the explosion of mainstream interest in the Internet. Linus was the first person who learned how to play by the new rules that pervasive Internet access made possible.</p>
+        </blockquote>
+      </li>
+    </ul>
+  </li>
+  <li>Leadership skills to attract other people for contributing to our work and getting the maximum of them is essential.
+    <ul>
+      <li>The author again from <code class="language-plaintext highlighter-rouge">Weinberg's</code> work point out that acting on the principle of common understanding is much beneficial and effective.</li>
+      <li>The author writes:
+        <blockquote>
+          <p>We may view Linus’s method as a way to create an efficient market in “egoboo”– to connect the selfishness of individual hackers as firmly as possible to difficult ends that can only be achieved by sustained cooperation.</p>
+        </blockquote>
+      </li>
+    </ul>
+  </li>
+  <li><strong>Provided The Developement Coordinator Has A Communication Medium At Least As Good As The Internet, And Knows How To Lead Without Coercion, Many Heads Are Inevitably Better Than One.</strong>
+    <ul>
+      <li>With everything explained in the above points, we can easily understand this statement.</li>
+    </ul>
+  </li>
+</ul>
+:ET

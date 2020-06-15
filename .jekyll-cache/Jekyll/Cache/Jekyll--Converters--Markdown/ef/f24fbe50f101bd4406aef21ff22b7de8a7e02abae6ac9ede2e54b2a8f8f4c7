@@ -1,0 +1,92 @@
+I"�8<h2 id="regarding-various-how-tos-and-the-procedure-for-whole-of-this-whatever-this-is">Regarding various how-tos and the procedure for whole of this.. whatever this is</h2>
+
+<p>This anime is great by the way
+<img src="/assets/img/neverland.jpg" alt="This is a great anime named The Promised Neverland" /></p>
+
+<p><strong>Side notes :</strong></p>
+
+<ul>
+  <li><em>I will mention several links below and explain what each of it contains so that you have the option, should you choose to accept it. If anyone you thinks the content in the link does not match my description or the link is broken then please be so kind to open an issue in the repository of the blog which I have mentioned in my “about me” page.</em></li>
+  <li><em>This series of articles is related to the participation in GSoC as a student, Google has a separate guide on participating as a mentor also</em>.<strong>[1]</strong></li>
+  <li><em>If any detail to the reader is found as wrong or incomplete or in messy English or any other suggestion then please be so kind to open an issue ( add your solution to it ( especially if “messy English” is your reason for opening the issue ) also if you can ) in the repository of this blog, the link to it is in the “about me” section of this blog.</em></li>
+</ul>
+
+<hr />
+<p>First of all the student guide <strong>[2]</strong> should have explained to you clearly ( please read it if you have not ) what you have to go through and when. There are different phases of GSoC and the guide explains it all step by step. So I will basically just write an overview here.</p>
+
+<ul>
+  <li><strong>Most importantly there are various requirements[3] a student has to fulfill then only he will be eligible to participate.</strong></li>
+  <li>So overall GSoC in short is:
+    <ul>
+      <li>Selecting your organization and working under a project of it.</li>
+      <li>Submitting your proposal which has various details regarding you and your approach towards your project.</li>
+      <li>If your proposal gets accepted then you work for it for the next 2-3 ( I do not know exact so sorry ) months with proper evaluations scheduled from time to time.</li>
+      <li>Receive money for the work you did.</li>
+    </ul>
+  </li>
+  <li>Google releases a timeline explaining the upcoming year’s GSoC a few months earlier than the program is going to start.
+    <ul>
+      <li>First there is a period when various organizations apply ( organization vary a lot, many new organizations will be there participating first time and many oldtimers which are participating from last 3-4 times ). Google has a separate guide on how to apply for them as well. Google filters and select some of them.</li>
+      <li>Then Google reveals the selected organizations, for a student participating in this program this is where you will enter.</li>
+      <li>Each organization revealed will have a short description, its GSoC introduction page where it will point to the various important details and links for one to start working in this organization, link to its discussion forums, prequisites for each of the projects and also a list of projects to work upon for this year’s GSoC under that organization. Each project will have some mentor assign to it whom the students can refer to for that project related queries at least.</li>
+    </ul>
+  </li>
+  <li>Students see the list of of accepted organizations.
+    <ul>
+      <li>The target for the student is to submit a proposal ( max upto 3 but only 1 will be selected ) for a project under some organization before the deadline and also before this deadline he has to contribute some work to this organization ( like some bug fixes at the least ) so that the organization should be somewhat confident with the abilities of the student.</li>
+      <li>One of the major hurdles the student faces is selection of the organization to work upon. This issue is definitely common and many approaches to tackle it have been provied by people online. I am just summarising the most notable ones.
+        <ul>
+          <li><code class="language-plaintext highlighter-rouge">If some students have some preference in a programming language then they can filter organization like that</code> <strong>but beware</strong> –&gt; Doing some online course in 2-3 days of that language and selecting an organization on it is not the right way. Short online courses on programming languages does not make one proficient in it ( only experience does ) and the organization which builds its projects under this language will exhaustively use all of the language features and concepts. There is a pretty high chance you will be overwhelmed at first but then again the reward is also big and your learning curve will be steep, after the end of your program you will be sort of experienced developer in the language.</li>
+          <li><code class="language-plaintext highlighter-rouge">Choose organization based on an interest in a specific field</code>. This approach is also common and better than the above if you want to excel in your field of interest than just obtaining the GSoC tag. Many of my friends applied ( many got selected also…STUDS! ) in the organization <a href="https://julialang.org/">Julia</a> which actually is a programming language dealing with various scientific computation algorithms ( applying deep learning models for example ) with operations obtaining almost C like performance ( if done right ). Most of them applied here cause they had studied somewhat and wanted to explore more in the field of Deep-Learning, Natural Language Processing ( and other buzzwords you can think of ) etc. What good about this approach is unless you are exceptional in your field of interest your learning curve will be definitely be steep regardless of the fact that you get or do not get selected.</li>
+          <li>One good thing about this program is that you can see anytime past year’s accepted organizations, their projects, whom they accepted, the projects upon which the accepted students worked and their individual proposals. <code class="language-plaintext highlighter-rouge">Some students use the benefit of excess time and information by looking up for organizations that are recurring for 2-3 years ( because it has a high chance of acceptance in this year as well ) and apply the above mentioned approaches as soon as timeline is released.</code> This hybrid approach certainly benefits if you have time beforehand because much is learned and much mistakes are rectified beforehand. If people in the organization will see you doing some contributions and then they see you applying their organization during the GSoC phase, the likelihood of your acceptance is much higher than the others because they are comfortable with working with you. The problem arises when the organization is not accepted this time despite it being accepted 2-3 times ( or more than that ) previously ( this happened to me this time and trust me it is not that rare ). Well then you just take your skillset to some other organization cause the skills you gained cannot be lost.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>If there are any prerequisites of GSoC then I would say it depends upon which approach ( among the above 3 ) you are following.</strong>
+    <ul>
+      <li>If it is the 1st one then just a proficiency in the language and also how to contribute to open source.</li>
+      <li>For the 2nd method, it will definitely be your knowledge in that field, your proficiency in the programming language you use in that area and knowledge about how to contribute in open source.</li>
+      <li>Since the third approach is the hybrid of above 2 you will definitely need at least one of the above mentioned prerequisites but there is a catch, since you are starting early even if you do not know anything you can just start understanding the prerequisites then only and be proficient in them.</li>
+      <li><strong>One important thing to notice is that the “familiarity with contribution to open-source” is common in all the prequisites.</strong> This actually is a must regardless of anything. It means understanding the basic idea of open-source ( just for aesthetic reasons, do not do it if you do not want to do it ), familiarity with a version control system ( <a href="https://git-scm.com/">Git</a> being the most famous one, mine organization use <a href="https://about.gitlab.com/">Gitlab</a> which is just some more tweaks to git ) and how to contribute to different open-source projects which are maintained by the version control system.</li>
+      <li><strong>Along with the above point one more must prerequsite is the ability to ask smart and informed questions.</strong>
+        <ul>
+          <li>You must realize the fact that the people of that organization are busy people ( even if they are not which is highly unlikely, you must assume this hypothesis for your own safety ). If you ask for spoonfeeding they will judge you ( sorry ) and ignore you. For example asking in the forum <em>Hello I am here for GSoC, how to start</em> is bad, really bad, <code class="language-plaintext highlighter-rouge">so bad that it can be a meme-content!</code> The organization is selected for GSoC so its natural for it to have <em>GSoC starter guide</em> page, <em>How to contribute here</em> page and <em>various FAQs</em>, asking this question means shows you have not read any of it and indirectly you just ignored all their hardwork ( no f*** given at all ). This sometime ( mostly ) bugs them off.
+So they do nothing to you, meaning they ignore you! ( take that you attention seeker ).</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>Most of the things are summarized above regarding what and hows if you are starting for GSoC. I have mentioned some links below regarding places where you can read more and form a more informed opinion because a summary is not enough and also where you can learn some of the important prerequisites.</p>
+
+<ul>
+  <li><a href="https://medium.com/coding-blocks/one-stop-guide-to-google-summer-of-code-a9e803beeda7">One stop guide to Google Summer of Code by Harshit Dwivedi</a>: A very beginner friendly and detailed guide explaining things much more in a friendly way, if you found this post not good at all, you can check out this. Please read it through, you won’t regret it.</li>
+  <li><a href="https://www.quora.com/How-do-I-win-the-Google-Summer-of-Code">Quora answer by Vandit Jain</a>: This answer also explain things nicely and also have important links in the end from where you can study the prerequisties I am talking about.</li>
+  <li><a href="https://www.quora.com/profile/Vaibhav-Singh-182">Quora answer by Vaibhav Singh</a>: Many people do not even try, reason being the mental blocks they face. This person’s post to the question <em>How do I prepare for Google Summer of Code(GSoC)?</em> deals with overcoming those blocks and how to approach it straight ahead along with providing a nice path to follow with the appropriate links for studying the prerequisites. <strong>Must read if you are feeling low on confidence like me.</strong></li>
+  <li><a href="https://www.quora.com/What-is-the-best-open-source-project-for-an-entry-level-programmer">Best open source projects for entry level programmer - Quora</a>: People have fear or do not know how to even contribute to an open-source project and which project to contribute to leave aside GSoC. Answers to this question provide some site and basic info on how to start.</li>
+  <li>Sometimes the organization is old-school and likes to use an IRC ( Internet Relay Chat ) for communication, if you read about them, you would realize you have to use something called <a href="https://vijaikumar.in/keeping-your-irccloud-client-always-connected-for-free-82db71b3cff3">IRC Bouncer</a>, <a href="https://about.riot.im/">Riot</a> is nice online IRC Bouncer.</li>
+  <li><a href="https://github.com/OrkoHunter/gsoc-FAQs">Orkohunter gsoc FAQs</a>: It contains explanation of various doubts which arise in the mind of students when they are starting to apply in this program. His answers will definitely help you. <strong>Must read for a GSoC aspirant.</strong></li>
+  <li><a href="http://www.catb.org/~esr/faqs/smart-questions.html">How to ask questions the smart way</a>: This blog is a bible when you are learning about how to interact with other developers in an efficient and a smart way without wasting anybody’s time.
+    <ul>
+      <li>On a side note, this article is written by <a href="https://en.wikipedia.org/wiki/Eric_S._Raymond">Eric Steven Raymond</a>, this guy also have another works which are also considered sort of “Golden Standard” to follow. Not related to GSoC but do give them a read, they will improve your perspective regarding certain things a lot.
+        <ul>
+          <li><a href="http://www.catb.org/~esr/faqs/hacker-howto.html">How to become a hacker</a>: Excellent blog telling in detail the hacker culture( not exactly that type which the media portrays as of now ) and how to become one.</li>
+          <li><a href="https://en.wikipedia.org/wiki/The_Cathedral_and_the_Bazaar">The Cathedral and the Bazaar</a>: His experience while developing an open-source project called <a href="https://en.wikipedia.org/wiki/Fetchmail">Fetchmail</a> and what he learned about the open-source culture. This book really will give you a sort of understanding why really people talk about open-source, how it helps in developing something and find the meaning beyond its definition. If you do not want to read the whole book but a detailed summary, you can check out <a href="/The_Cathedral_and_The_Bazaar_Summary_1/">this</a> post of mine.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>In the next post I will talk about almost all of the details related to proposal writing and submission( keep in mind that some links which I provided above do contain that information and I may repost them with the specific section to read in the next page ).</p>
+
+<hr />
+
+<ol>
+  <li>Here is the <a href="https://google.github.io/gsocguides/mentor/">mentor</a> guide.</li>
+  <li>Here is the <a href="https://google.github.io/gsocguides/student/">student</a> guide.</li>
+  <li>Check the answer of the question <em>What are the eligibility requirements for participation?</em> of the <a href="https://developers.google.com/open-source/gsoc/faq">FAQ</a> page.</li>
+</ol>
+:ET
